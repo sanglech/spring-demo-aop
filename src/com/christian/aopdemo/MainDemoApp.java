@@ -26,7 +26,7 @@ public class MainDemoApp {
 
 		
 		System.out.println("Adding membership DAO");
-		theMembershipDAO.addAccount();
+		theMembershipDAO.addPerson();
 		
 		
 		

@@ -12,11 +12,19 @@ public class MyDemoLoggingAspect {
 	
 	//@Before advice example
 	
-	@Before("execution(public void addAccount())")
+	@Before("execution(public void com.christian.aopdemo.dao.AccountDAO.addAccount())")
 	public void beforeAddAccountAdvice() {
 		System.out.println("\n=========>> Execution @Before advice on addAccount()");
 		
 	}
+	
+	
+	@Before("execution(* add*())")
+	public void beforeAddAdviceALL() {
+		System.out.println("\n~~~~~~~~> Execution @Before advice on ALL adds()");
+		
+	}
+	
 	
 	
 }
