@@ -23,8 +23,10 @@ public class MainDemoApp {
 		
 		
 		//call the buisness method
-		System.out.println("Adding another account");
+		System.out.println("Adding account");
 		theAccountDAO.addAccount(theAccount,true);
+		
+		theAccountDAO.doWork();
 
 		
 		System.out.println("Adding membership DAO");
