@@ -17,16 +17,22 @@ public class MainDemoApp {
 		MembershipDAO theMembershipDAO=  context.getBean("membershipDAO",MembershipDAO.class);
 		
 		
+		Account theAccount= new Account();
+		
 		//point cut expression matches on ALL add account methods
 		
 		
 		//call the buisness method
 		System.out.println("Adding another account");
-		theAccountDAO.addAccount();
+		theAccountDAO.addAccount(theAccount);
 
 		
 		System.out.println("Adding membership DAO");
 		theMembershipDAO.addPerson();
+		
+		
+		System.out.println("Adding account in membership DAO");
+		theMembershipDAO.addAccount();
 		
 		
 		
